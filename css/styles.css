@@ -164,7 +164,7 @@ color: #bdbbbb;
 }
 
 #theme-button{
-  color: #fff;
+  color: #262626;
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -805,7 +805,7 @@ margin-top: var(--mb-0-5);
 .icon__cart{
   width: 20px;
   height: 20px;
-  stroke: #ffffff;
+  stroke: #262626;
 }
 
 .icon__cart:hover{
@@ -817,14 +817,12 @@ margin-top: var(--mb-0-5);
 
 .count-products{
   position: absolute;
-  top: 55%;
+  top: 45%;
   right: 0;
-
   background-color: #000000;
   color: #fff;
   width: 15px;
   height: 15px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -839,9 +837,8 @@ margin-top: var(--mb-0-5);
   position: absolute;
   top: 50px;
   right: 0;
-
-  background-color: #fff;
-  width: 400px;
+  background-color: #ffffff;
+  width: 250px;
   z-index: 1;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
   border-radius: 10px;
@@ -853,10 +850,10 @@ margin-top: var(--mb-0-5);
   align-items: center;
   justify-content: space-between;
   padding: 30px;
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 
 }
+
 
 .info__cart-product{
   display: flex;
@@ -951,6 +948,8 @@ margin-top: var(--mb-0-5);
     grid-template-columns: repeat(1, 180px);
     justify-content: center;
   }
+
+
 }
 
 /* Para Tablets */
