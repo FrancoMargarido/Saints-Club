@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="./assets/logosc.jpg" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./css/styles.css">
+
+        <title>Saints Club</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class='bx bx-accessibility nav__logo-icon' ></i>Saints
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#inicio" class="nav__link active-link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#destacado" class="nav__link">Destacado</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#productos" class="nav__link">Productos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#nuevo" class="nav__link">Nuevo</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <!--=============== CARRITO ====================  -->
+                    
+                    <div class="container-icon">
+                        <div class="container__cart-icon">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            class="icon__cart"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                            />
+                        </svg>
+                        <div class="count-products">
+                            <span id="contador-productos">0</span>
+                        </div>
+                        </div>
+                        <div class="container-cart-products hidden-cart">
+                            <div class="row__product">
+                                <div class="cart-product">
+                                    <div class="info-cart-product">
+                                        <span class="cantidad-producto-carrito">x</span>
+                                        <p class="titulo-producto-carrito">x</p>
+                                        <span class="precio-producto-carrito">x</span>
+                                    </div>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke-width="1.5"
+                                        stroke="currentColor"
+                                        class="icon-close"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M6 18L18 6M6 6l12 12"
+                                        />
+                                    </svg>
+                                    
+                                </div>
+
+                            </div>
+
+
+                            <div class="cart-total">
+                                <h3>Total:</h3>
+                                <span class="total-pagar" id="pago">$0</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+<!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="inico">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="./assets/logosc.jpg" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.instagram.com/saintsclub.sw/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            NUEVA COLECCION <br> SAINTS CLUB
+                        </h1>
+
+                        <p class="home__description">
+                            Descubré lo nuevo de Saints Club
+                        </p>
+
+                        <span class="home__price">¿Te lo vas a perder?</span>
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                Comprar
+                            </a>
+
+                            <button class="button home__button">
+                                Descubre Más
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== DESTACADO ====================-->
+            <section class="featured section container" id="destacado">
+                <h2 class="section__title">
+                    DESTACADO
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">Disponible</span>
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">REMERA 1</h3>
+                        <span class="featured__price">$8000</span>
+                    </div>
+
+                    <button class="button featured__button">
+                        DESCUBRIR
+                    </button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Disponible</span>
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">REMERA 2</h3>
+                        <span class="featured__price">$8000</span>
+                    </div>
+
+                    <button class="button featured__button">
+                        DESCUBRIR
+                    </article>
+                </button>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Disponible</span>
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">REMERA 3</h3>
+                        <span class="featured__price">$8000</span>
+                    </div>
+
+                    <button class="button featured__button">
+                        DESCUBRIR
+                    </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== QUIENES SOMOS ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            ¿Quienes somos?
+                        </h2>
+
+                        <h1 class="story__title">
+                            Somos Saints Club <br> 
+                        </h1>
+
+                        <p class="story__description">
+                            Y ya nos verán pistear
+Pura cadena gruesa y las plebitas son del Instagram
+Diamantón, llevo en mi Glock
+Patek Philippe es mi reloj
+Yo sé qué tanto me costó
+
+Y ahora navegamos por LA
+Y, pa' Sinaloa, me voy también
+Y las champañitas saben bien (bien, eh)
+
+                        </p>
+
+                        <a href="#productos" class="button button--small">Descubrir</a>
+
+                        <div class="story__images">
+                            <img src="./assets/logosc.jpg" alt="" class="story__img"</img>
+                            </p>
+                            <div class="story__square"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTOS ====================-->
+            <section class="products section container" id="productos">
+                <h2 class="section__title">
+                    Productos
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="products__img">
+                        <h3 class="products__title">Remera 1 </h3>
+                            <span class="products__price">$4200</span>
+                            <button class="button product__button">
+                                Comprar
+                            </button>
+                            
+                        </h3>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Remera 2</h3>
+                            <span class="products__price">$12000</span>
+
+                            <button class="button product__button">
+                                Comprar
+                            </button>
+
+                    </article>
+
+                    <article class="products__card">
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Remera 3</h3>
+                            <span class="products__price">$14000</span>
+
+                            <button class="button product__button">
+                                Comprar
+                            </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Remera 4 </h3>
+                            <span class="products__price">$3000</span>
+
+                            <button class="button product__button">
+                                Comprar
+                            </button>
+
+                    </article>
+
+                    <article class="products__card">
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Remera De Tilin</h3>
+                            <span class="products__price">$3414</span>
+
+                            <button class="button product__button">
+                                Comprar
+                            </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="products__img">
+
+                        <h3 class="products__title">Remera 5</h3>
+                            <span class="products__price">$12000</span>
+
+                            <button class="button product__button">
+                                Comprar
+                            </button>
+
+                    </article>
+                </div>
+            </section>
+
+
+            <!--==================== NUEVOS INGRESOS ====================-->
+            <section class="new section container" id="nuevo">
+            <h2 class="section__title">
+                Nuevos Ingresos
+            </h2>
+
+            <div class="new__container">
+                <div>
+                    <div>
+                        <article class="new__card">
+                            <span class="new__tag">Nuevo</span>
+
+                            <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Tres</h3>
+                                <span class="new__price">$41414</span>
+                            </div>
+
+                            <button class="button new__button">
+                                DESCUBRIR
+                            </button>
+                        </article>
+
+                        <article class="new__card">
+                            <span class="new__tag">Nuevo</span>
+
+                            <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Oof</h3>
+                                <span class="new__price">$14141</span>
+                            </div>
+
+                            <button class="button new__button">
+                                DESCUBRIR
+                            </button>
+                        </article>
+
+                        <article class="new__card">
+                            <span class="new__tag">Nuevo</span>
+
+                            <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Ooof</h3>
+                                <span class="new__price">$3414</span>
+                            </div>
+
+                            <button class="button new__button">
+                                DESCUBRIR
+                            </button>
+                        </article>
+
+                        <article class="new__card">
+                            <span class="new__tag">Nuevo</span>
+
+                            <img src="./assets/t-shirt-g5ccd63efd_1280.png" alt="" class="new__img">
+
+                            <div class="new__data">
+                                <h3 class="new__title">Bang Bang</h3>
+                                <span class="new__price">$3000</span>
+                            </div>
+
+                            <button class="button new__button">
+                                DESCUBRIR
+                            </button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Informacion</h3>
+
+                    <ul class="footer__list">
+                        <li>
+                            <a href="./pages/info.html" class="footer__link">¿Quienes Somos?</a>
+                        </li>
+
+                        <li>
+                            <a href="./pages/info.html" class="footer__link">Recomenadaciones</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Compras</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="./pages/info.html" class="footer__link">Compras</a>
+                        </li>
+                        <li>
+                            <a href="./pages/info.html" class="footer__link">Atencion al cliente</a>
+                        </li>
+                        <li>
+                            <a href="./pages/info.html" class="footer__link">Envios</a>
+                        </li>
+                        <li>
+                            <a href="./pages/info.html" class="footer__link">Copyright</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Productos</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="./pages/info.html" class="footer__link">Remeras</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Redes Sociales</h3>
+
+                        <a href="https://www.instagram.com/saintsclub.sw/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src=""></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
