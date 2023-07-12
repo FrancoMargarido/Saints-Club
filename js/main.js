@@ -72,20 +72,35 @@ const valorTotal=document.querySelector ('.total-pagar')
 
 const countProducts = document.querySelector ('#contador-productos')
 
-// Check if products are stored in local storage
+
 const storedProducts = localStorage.getItem('products');
 if (storedProducts) {
-AllProducts = JSON.parse(storedProducts);
+    AllProducts = JSON.parse(storedProducts);
 }
-// 
+
+const fetchCartData = async () => {
+    try {
+        const response = await fetch('https://api.example.com/cart');
+        const data = await response.json();
+
+        AllProducts = data.products;
+        showHTML();
+    } catch (error) {
+        console.error('Error fetching cart data:', error);
+    }
+};
+
+
+window.addEventListener('load', fetchCartData);
+
 productsList.addEventListener ('click', e=>{
 
-// Save updated AllProducts array to local storage
+
 const saveProductsToLocalStorage = () => {
     localStorage.setItem('products', JSON.stringify(AllProducts));
 };
 
-  // Add this line after modifying the AllProducts array
+
 saveProductsToLocalStorage();
 
 
@@ -196,11 +211,21 @@ const containerProduct= document.createElement('div')
         total = total + parseInt(product.quantity * product.price.slice(1))
         totalOfProduct = totalOfProduct + product.quantity
 
+        const endPurchaseButton = document.querySelector('.end__purchase');
+
+endPurchaseButton.addEventListener('click', () => {
+
+AllProducts = [];
+
+showHTML();
+
+localStorage.removeItem('products');
+
+console.log('Compra completada, Su carrito esta vacio.');
+});
+
     })
 
 valorTotal.innerText = `$${total}`
 countProducts.innerText = totalOfProduct
-
 }
-
-

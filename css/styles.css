@@ -317,7 +317,7 @@ column-gap: 1rem;
 
 /* Active link */
 .active-link{
-  color: #262626;
+  color: #e3e3e3;
 }
 
 /*=============== HOME ===============*/
@@ -355,7 +355,7 @@ column-gap: 1rem;
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   transition: .3s;
-  margin-right: -2rem;
+  margin-right: -3rem;
 }
 
 .home__social-link:hover{
@@ -414,6 +414,10 @@ column-gap: 1rem;
   padding: 1rem 1.5rem;
 }
 
+.end__purchase{
+  position: relative;
+  left: 30px;
+}
 /*=============== FEATURED ===============*/
 .featured__container{
   row-gap: 2.5rem;
